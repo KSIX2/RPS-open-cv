@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#top{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 50vh;
+    background: #00B1D2FF;
+}
+#button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23vw;
+    height: 20%;
+    font-size: 7vh;
+    font-family: 'Gluten', cursive;
+    background: black;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+#button:hover{
+    cursor: pointer;
+    background: white;
+    color: black;
+    font-size: 8vh;
+}
+#bottom{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 50vh;
+    background: #FDDB27FF;
+}
+.image{
+    height: 50vh;
+    width: 23vw;
+}
+img{
+    display: block;
+    width: 23vw;
+}
+.move{
+    height: 50vh;
+    width: 62vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16vh;
+    font-family: 'Gluten', cursive;
+}
+.points{
+    color: black;
+    height: 50vh;
+    width: 15vw;
+    font-size: 6vh;
+    font-family: 'Gluten', cursive;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+#hpoints{
+    background: greenyellow;
+    border-left: 1px solid black;
+}
+#cpoints{
+    background: greenyellow;
+    border-top: 1px solid black;
+    border-left: 1px solid black ;
+}
+#cover{
+    display: none;
+    position: absolute;
+    top: 0px;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.modal{
+    display: none;
+    width: 40vw;
+    height: 50vh;
+    font-family: 'Gluten', cursive;
+    font-size: 6vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    background: white;
+}
+#playagain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17vw;
+    height: 10vh;
+    background: #ff37cf;
+    color: white;
+    border-radius: 50px;
+    border: 2.5px solid black;
+    font-size: 5vh;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+}
+#playagain:hover{
+    width: 19vw;
+    font-size: 6vh;
+    cursor: pointer;
+}

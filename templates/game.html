@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/game.css">
+</head>
+<body>
+    <div id="top">
+        <div class="image" id="himage">
+            <img src="{{ url_for('video_feed') }}" height="80%">
+            <div id="button">make move</div>
+        </div>
+        <div class="move" id="hmove">
+            <p id="humanmovetimer">hmove</p>
+        </div>
+        <div class="points" id="hpoints">HUMAN SCORE</div>
+    </div>
+    <div id="bottom">
+        <div class="image" id="cimage">
+            <img src="../static/robot.jpg" height="100%">
+        </div>
+        <div class="move" id="cmove">
+            <p id="compmovetimer">cmove</p>
+        </div>
+        <div class= points id="cpoints">MACHINE SCORE</div>
+    </div>
+    <div id="cover">
+        <div class="modal">
+            <p class="modalcontent" id="winner">dfd</p><br>
+            <p class="modalcontent" id="hscore">Human Score = </p><br>
+            <p class="modalcontent" id="cscore">Computer Score = </p><br>
+            <a href="/game" id="playagain">Play Again</a>
+        </div>
+    </div>
+    <script type="text/javascript" src="../static/game.js"></script>
+</body>
+</html>
